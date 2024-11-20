@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+.container{
+    width: 90%;
+    justify-self: center;
+}
+header{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    justify-items: center;
+    align-self: center;
+    padding: 20px;
+    margin: 20px;
+}
+h1{
+    padding-bottom: 20px;
+}
+.header-flex{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.header-flex li , a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+.featured-post{
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+
+.featured-post img{
+    border-radius: 20px;
+    width: 19%;
+    height: 19%;
+    padding-right: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.featured-content{
+    flex:1;
+}
+button{
+    background-color: rgb(29, 28, 28);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: 30px;
+}
+.recent-post h2{
+    
+}
+
+.featured-post p{
+    padding: 30px;
+}
+.box1{
+    border-radius: 20px;
+    width: 25%;
+    background-color: white;
+    margin-top:70px;
+    margin-right: 80px;
+    height: 250px;
+    text-align: center;
+}
+.box2{
+    border-radius: 20px;
+    width: 25%;
+    background-color: white;
+    margin-top: 70px;
+    margin-right: 80px;
+    margin-left: 20px;
+    height: 250px;
+    text-align: center;
+}
+.box3{
+    border-radius: 20px;
+    width: 25%;
+    background-color: white;
+    margin-top: 70px;
+    height: 250px;
+    text-align: center;
+    margin-left: 100px;
+}
+.box1 button{
+    margin-top: 30px;
+}
+.box1 h3, p{
+    padding: 10px;
+    margin-top: 20px;
+}
+.box2 button{
+    margin-top: 30px;
+}
+.box2 h3, p{
+    padding: 10px;
+    margin-top: 20px;
+}
+.box3 button{
+    margin-top: 30px;
+}
+.box3 h3, p{
+    padding: 10px;
+    margin-top: 20px;
+}
+.recent-posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.r{
+    text-align: center;
+}
+footer{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    
+}
+@media(max-width:768px;){
+    body{
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        grid-column: span 1;
+        flex-direction: column;
+    }
+}
